@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/more/more",
+    "pages/mine/mine",
+    "pages/community/community",
+    "pages/community2/community2",
+    "pages/songlist/songlist",
+    "pages/play/play",
+    "pages/songclass/songclass",
+    "pages/myvideo/video",
+    "pages/logs/logs" 
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#66cccc",
+    "navigationBarTitleText": "猿音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#C10D0C",
+    "backgroundColor": "#66cccc",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "猿推荐",
+        "iconPath": "icon/music2.png",
+        "selectedIconPath": "icon/music1.png"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "text": "猿窝",
+        "iconPath": "icon/village.png",
+        "selectedIconPath": "icon/village-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "icon/mine.png",
+        "selectedIconPath": "icon/mine-active.png"
+      }
+    ]
+  }
+}
