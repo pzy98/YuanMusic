@@ -1,0 +1,85 @@
+<view class="bg">
+
+<view class="bt"><image src="/img/mg2.jpg"></image></view>
+
+<view class="bg2">
+<view class="bt2">语种</view>
+<text class="cy">华语</text>
+<text class="cy">欧美</text>
+<text class="cy">日语</text>
+<text class="cy">韩语</text>
+<text class="cy">粤语</text>
+</view>
+
+<view class="bg2">
+<view class="bt2">风格</view>
+<text class="cy">流行</text>
+<text class="cy">摇滚</text>
+<text class="cy">民谣</text>
+<text class="cy">电子</text>
+<text class="cy">舞曲</text>
+<text class="cy">说唱</text>
+<text class="cy">轻音乐</text>
+<text class="cy">爵士</text>
+<text class="cy">乡村</text>
+<text class="cy">古典</text>
+<text class="cy">民族</text>
+<text class="cy">英伦</text>
+<text class="cy">金属</text>
+<text class="cy">朋克</text>
+</view>
+
+<view class="bg2">
+<view class="bt2">场景</view>
+<text class="cy">清晨</text>
+<text class="cy">夜晚</text>
+<text class="cy">学习</text>
+<text class="cy">工作</text>
+<text class="cy">午休</text>
+<text class="cy">下午茶</text>
+<text class="cy">地铁</text>
+<text class="cy">驾车</text>
+<text class="cy">运动</text>
+<text class="cy">旅行</text>
+<text class="cy">散步</text>
+<text class="cy">酒吧</text>
+</view>
+
+<view class="bg2">
+<view class="bt2">情感</view>
+<text class="cy">怀旧</text>
+<text class="cy">清新</text>
+<text class="cy">浪漫</text>
+<text class="cy">伤感</text>
+<text class="cy">治愈</text>
+<text class="cy">放松</text>
+<text class="cy">孤独</text>
+<text class="cy">感动</text>
+<text class="cy">兴奋</text>
+<text class="cy">快乐</text>
+<text class="cy">安静</text>
+<text class="cy">思念</text>
+</view>
+
+<view class="bg2">
+<view class="bt2">主题</view>
+<text class="cy">影视原声</text>
+<text class="cy">儿童</text>
+<text class="cy">ACG</text>
+<text class="cy">校园</text>
+<text class="cy">游戏</text>
+<text class="cy">70后</text>
+<text class="cy">80后</text>
+<text class="cy">90后</text>
+<text class="cy">网络歌曲</text>
+<text class="cy">KTV</text>
+<text class="cy">经典</text>
+<text class="cy">翻唱</text>
+<text class="cy">吉他</text>
+<text class="cy">钢琴</text>
+<text class="cy">乐器</text>
+<text class="cy">榜单</text>
+<text class="cy">00后</text>
+</view>
+
+</view>

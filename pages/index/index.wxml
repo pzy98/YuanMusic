@@ -1,0 +1,75 @@
+<!--index.wxml-->
+<view class="container">
+<!-- 轮播-->
+<view class="lunbo">
+ <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="#b8b3b3" indicator-active-color="#d22222">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <image src="{{item}}"style="width:100%;height:160px;"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    </view>
+</view>
+<!-- 按钮栏-->
+<view class="box">
+  <view class="btnbox">
+  <!-- btn1 -->
+    <view class="btn right_margin" bindtap="tuijianclick">
+      <view class="yuan"><image src="/icon/music_player.png" style="width:28px; height:28px;"></image></view>
+      <text>推荐</text>
+    </view>
+    <!-- btn2 -->
+    <view class="btn right_margin" bindtap="minyaoclick">
+    <view class="yuan"><image src="/icon/musical.png" style="width:28px; height:28px;"></image></view>
+      <text>民谣</text>
+    </view>
+    <!-- btn3 -->
+    <view class="btn right_margin" bindtap="huayuclick">
+    <view class="yuan"><image src="/icon/music_playlist2.png" style="width:25px; height:25px;"></image></view>
+      <text>华语</text>
+    </view>
+    <!-- btn4 -->
+    <view class="btn right_margin" bindtap="yueyuclick">
+    <view class="yuan"><image src="/icon/musicplayer.png" style="width:28px; height:28px;"></image></view>
+      <text>粤语</text>
+    </view>
+    <!-- 5 -->
+    <view class="btn" bindtap="coderclick">
+    <view class="yuan"><image src="/icon/musiclist.png" style="width:28px; height:28px;"></image></view>
+      <text>码农频道</text>
+    </view>
+</view>
+</view>
+<!--musicbox-->
+<view class="musicbox">
+<!-- 标题横条 -->
+<view class="tittle">
+  <h5>{{title}}</h5>
+	<span class="more" bindtap="gogo">音乐广场</span>
+</view>
+<!-- 歌单列表 -->
+   <block wx:for="{{musicinfo}}">
+   <view class="mylist mylist_topmargin" bindtap="onplay" data-index="{{index}}">
+   <view class="left_img">
+   <image src="{{item.picUrl}}" style="width:70px;height:70px;border-radius: 5px;"></image>
+   </view>
+   <!-- 详细信息 -->
+   <view class="song_info">
+   <view style="float:left;">
+   <text class="song_name">{{item.name}}</text>
+   <rich-text class="singer">{{item.artists+' - ' +item.albumname}}</rich-text>
+   </view>
+   <!-- 播放btn -->
+   <view class="right_icon">
+   <image src="/icon/more.png" style="width:32px;height:32px;"></image>
+  </view>
+   </view>
+   </view>
+  </block>
+</view>
+</view>

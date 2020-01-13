@@ -1,0 +1,8 @@
+/* pages/more/more.wxss */
+.title{
+  width: 100%;
+  height: 45px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  background: #fdee;
+}

@@ -1,0 +1,103 @@
+/* pages/community/community.wxss */
+.mycontainer{
+  /* width: 100%; */
+  padding:8px;
+}
+.wall{
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.wall image{
+  width: 100%;
+  height: 100%;
+}
+/* 制作网格 */
+.wrapper{
+  margin-top: 10px;
+ column-count: 2;
+ column-gap: 8px;
+}
+.title{
+  margin-top: 8px;
+  height: 18px;
+  padding: 3px 6px;
+  /* padding-left: 6px; */
+  border-left: 2px solid #d22222;
+}
+.item {
+    margin-bottom: 12px;
+    break-inside: avoid;
+    box-sizing: border-box;
+    /* padding: 10px; */
+    /* background-color: gold; */
+}
+.item-content-img{ 
+ position: relative;
+  height: 140px;
+  /* 设置文本超出范围时，*/
+ /* white-space: nowrap;
+  word-wrap: normal;
+  text-overflow: ellipsis;*/
+  overflow: hidden;
+  /* 自动隐藏超出部分，并显示省略号 */
+ border-radius: 10px;
+}
+.item-content-img image{
+  width: 100%;
+  height: 100%;
+}
+.item-content-count{
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  height: 22px;
+  padding: 4px;
+  color: #fff;
+  font-size: 10px;
+  /* border: 1px solid salmon; */
+  background-color: rgba(32, 32, 32, .7)
+}
+.item-content-count>image:first-child{
+  float: left;
+  width: 15px;height: 15px;
+}
+
+.item-content-text{
+  height: 50px;
+  padding: 1px 4px;
+  /* border: 1px solid rgb(114, 196, 250);
+  border-bottom-right-radius:10px;
+  border-bottom-left-radius: 10px; */
+  /* border: 1px solid rgb(114, 196, 250); */
+}
+.tip{
+ 
+  word-break: break-all;
+  /* white-space: nowrap; */
+  word-wrap: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 11px;
+  /* border: 1px solid rebeccapurple; */
+}
+.author{
+  font-size: 10px;
+  color: gray;
+  /* border: 1px solid #d22222; */
+}
+/* 分类按钮 */
+.feilei{
+  padding: 6px;
+}
+.feilei>button{
+  width: 40%;
+  /* height: 20px; */
+  color: #fff;
+  background: rgb(240, 147, 130);
+  /* border: 2px solid #3498db; */
+  border-radius: 24px;
+  transition: 0.25s;
+}

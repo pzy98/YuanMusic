@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<image src="/images/t.jpg" class="t"></image>
+
+  <view class="userbox"  wx:for="{{mydata}}">
+  <!-- 1 -->
+  <view class="tn">
+    <view class="tb">
+      <image src="{{item.image}}" class="tx"></image>
+    </view>
+      <view class="name"> 
+       <view style="font-size:14px; font-weight:bold;">{{item.name}}</view>
+       <text style="color:gray; font-size:12px;" >{{item.date}}</text>
+      </view>
+  </view>
+  <!-- 2 -->
+    <view class="pl">{{item.content}}</view>
+    <!-- 3 -->
+    <view class="zan">
+    <view class="left"><image  src="/icon/aixin.png"></image></view>
+    <view class="right"><image  src="/images/632.png"></image></view>
+    </view>
+  </view>
+
+
+ <view class="fb">发表</view>

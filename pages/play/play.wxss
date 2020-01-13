@@ -1,0 +1,168 @@
+/* pages/play.wxss */
+
+/* 模糊背景 */
+.mohu{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.bgbox {
+  height: 100%;
+}
+.bg-img {
+  position: absolute;
+  z-index: -1;
+  width:100%;
+  height:100%;
+}
+
+/* 顶部bar */
+.song-info-bar {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(40, 40, 40, 0.6);
+  padding: 3px 6px;
+  text-align: center;
+  position: absolute;
+  z-index: 888;
+  overflow: hidden;
+}
+.songname {
+  color: rgb(250, 243, 243);
+  font-weight: bold;
+  font-size: 12pt;
+}
+	/*动画盒子*/
+		@keyframes haha {
+			0% {
+				left:-50px;
+			}
+      
+			100% {
+				left: 300px;
+			}
+		}
+.singer {
+  margin-top: 3pt;
+  margin-bottom: 0;
+  color: #d6cdcd;
+  /* 不换行 */
+  white-space: nowrap;
+  font-size: 10pt;
+  position: absolute;
+  animation: haha 5s linear 0s infinite normal forwards;
+}
+/* 旋转碟片 */
+		@keyframes rotate {
+			from {
+				transform: rotate(-360deg);
+			}
+		}
+  /* 动作控制 */
+    .play{
+      animation: rotate 8s infinite linear;
+    }
+    .pause{
+      animation-play-state: paused;
+    }
+
+/* 碟片 */
+.diepian {
+  width: 450rpx;
+  height: 450rpx;
+  background-color: rgba(50, 50, 50, 0.7);
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25%;
+  border-radius: 50%
+}
+.diepian image{
+  width: 350rpx;
+  height: 350rpx;
+}
+.rotate-img {
+  width: 350rpx;
+  height: 350rpx;
+  border-radius: 50%;
+  margin: 50rpx 50rpx;
+  overflow: hidden;
+}
+
+/* 底部控制台 */
+
+.control {
+  width: 100%;
+  height: 83px;
+  background: rgba(32, 32, 32, 0.6);
+  padding: 3px 0px;
+  position: fixed;
+  bottom: 0;
+}
+
+.c1 {
+  height: 25px;
+  text-align: center;
+  padding: 6px 6px 0px 6px;
+  position: relative;
+}
+
+.progress-bar {
+  height: 5px;
+  width: 70%;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 13px;
+}
+
+.left-time {
+  float: left;
+  font-size: 13px;
+  color: #fff;
+  padding: 0;
+  margin:0;
+}
+
+.right-time {
+  float: right;
+  font-size: 13px;
+  color: #fff;
+  padding: 0;
+  margin:0;
+}
+
+.c2 {
+  height: 45px;
+  position: relative;
+  padding: 2px 15px;
+  margin-bottom: 10PX;
+  /* border: 1px solid salmon; */
+}
+
+.bf-way {
+  float: left;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.btn-group {
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.share-btn{
+  float: right;
+  margin-top: 2%;
+  text-align: center;
+}

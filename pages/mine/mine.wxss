@@ -1,0 +1,156 @@
+/* pages/mine/mine.wxss */
+page{
+  background: gainsboro;
+}
+.userinfo {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 140px;
+  /* padding-top: 10px; */
+  align-items: center;
+}
+.bj{
+  position:absolute;
+  z-index:-1;
+  width: 100%;
+  height: 100%;
+  background: #aaa; 
+}
+.bjimg1{
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border: 1px solid gainsboro;
+  border-radius: 50%;
+}
+.userinfo-avatar{
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.tip{
+  font-size: 12px;
+  color: #aaa;
+}
+.userbtn{
+  height: 20px;
+  padding-bottom: 4px;
+  box-sizing: content-box;
+  font-size: 12px;
+  color: #fff;
+  background: #5BC5E6;
+}
+.userinfo-nickname {
+  color: #fff;
+}
+.welcome{
+  position: absolute;
+  bottom: -30px;
+  width: 80%;
+  height: 60px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 25px;
+  color: #5BC5E6;
+  font-weight: bold;
+  border-radius: 10px;
+  background: rgb(99, 95, 95);
+}
+.bjimg2{
+  width: 100%;
+  height: 100%;
+  /* position: fixed; */
+  z-index: -1;
+}
+.mohubj{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.3);
+  color: rgb(212, 247, 245);
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 10px;
+  text-align: center
+}
+.wrapper{
+  width: 100%;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 40px minmax(100px,1fr);
+  grid-template-rows: (4,40px);
+  padding-top: 42px;
+}
+.iconbox{
+  padding-top: 5px;
+  text-align: center;
+  /* border: 1px solid gold; */
+}
+.iconbox>image{
+  width: 72%;
+  height: 72%;
+  align-items: center;
+}
+.mytext{
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border-bottom: 1px solid #aaa;
+}
+.count{
+  font-size: 12px;
+  color: #aaa;
+}
+ /* 用户歌单（停止开发） */
+.usersong{
+  /* position: relative;
+  bottom: 0px; */
+  margin-top: 10px;
+  height: 250px;
+  background: #fff;
+}
+.collectbox{
+  width: 100%;
+  height: 24px;
+  padding: 3px 8px;
+  border-bottom: 1px solid #aaa;
+}
+.wz{
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+}
+.arrowbox{
+  float: right;
+  height: 20px;
+  width: 20px;
+  margin-right: 15px;
+}
+.arrow{
+  float: right;
+  width: 100%;
+  height: 100%;
+}
+.mylist{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 15px;
+  color: gray;
+  /* background: #eee; */
+}
+/* 版权 */
+.copyright{
+  position: relative;
+  bottom: 3px;
+  width: 100%;
+  color: rgb(116, 111, 111);
+  font-size: 13px;
+  text-align: center;
+}

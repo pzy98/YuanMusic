@@ -1,0 +1,56 @@
+<!--pages/songlist/songlist.wxml-->
+<!-- <view>
+{{songlist_id}}+{{songlist_index}}
+<button bindtap="look">查看</button>
+</view> -->
+<view class="box1">
+<image class="gedanpic" src="{{gedanlist.picUrl}}"></image>
+<!-- 歌单简介 -->
+  <view class="gedantitle">
+    {{gedanlist.text}}
+  </view>
+  <!-- 用户btn -->
+  <view class="userbtn"> 
+    <view class="centerbox1">
+    <view class="play">
+      <image src="/icon/player-icons_40px_1137033_easyicon.net.png"></image>
+    </view>
+    <!--  -->
+    <text wx:if="{{gedanlist.songs}}">{{gedanlist.songs.length}}首</text>
+    <text wx:else>0首</text>
+    </view>
+    <view class="centerbox2">
+    <view class="share">
+      <image src="/icon/share2.png"></image>
+    </view>
+    <view class="collect">
+      <image src="/icon/aixin.png"></image>
+    </view>
+    </view>
+  </view>
+</view>
+<!-- 歌单列表 -->
+<view class="box2">
+<!-- 歌单作者信息 -->
+  <view class="authorbox">
+    <!-- 头像 -->
+    <view class="authorimg">
+      <image src="{{gedanlist.authorpic}}"></image>
+    </view>
+    <view class="weizhi">
+    <view class="name">{{gedanlist.author}}</view>
+    <view class="date">2019-11-29</view>
+  </view></view>
+  <!-- 单曲 -->
+  <view class="songlist">
+  <block wx:for="{{gedanlist.songs}}">
+    <view class="num">{{index+1}}</view>
+    <view class="content">
+      <view class="songname">{{item.songname}}</view>
+      <view class="singer">{{item.singer}}</view>
+    </view>
+    <view class="icon">
+      <image src="/icon/ellipsis.png"></image>
+    </view></block>
+  </view>
+</view>

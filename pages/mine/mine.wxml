@@ -1,0 +1,68 @@
+<!--pages/mine/mine.wxml-->
+<!-- 用户信息 -->
+  <view class="userinfo">
+  <image class="bj" src="/img/bj4.jpg"></image>
+  <block wx:if="{{!hasUserInfo && canIUse}}">
+    <image class="bjimg1" src="/icon/user-unlogin.png"></image>
+    <button class="userbtn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">点击登录 </button>
+    </block>
+    <block wx:else>
+      <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+    <!-- 欢迎使用 -->
+    <view class="welcome">
+    <image src="/img/mybj2.jpg" class="bjimg2"></image>
+    <view class="mohubj">猿音乐，与喜欢的音乐不期而遇</view>
+    </view>
+  </view>
+  <!-- 用户记录 -->
+  <view class="wrapper">
+  <!-- 1 -->
+  
+  <view class="iconbox">
+    <image src="/icon/village-active.png"></image>
+  </view>
+  <view class="mytext" bindtap="test">
+    <text>猿村社区</text>
+  </view>
+  
+  <!-- 2 -->
+  <view class="iconbox">
+    <image src="/icon/musicplayer.png"></image>
+  </view>
+  <view class="mytext" bindtap="gogo2">
+    <text>我的电台</text>
+  </view>
+  <!-- 3 -->
+  <view class="iconbox">
+    <image src="/icon/player-icons_40px_1137033_easyicon.net.png"></image>
+  </view>
+  <view class="mytext">
+    <text>最近播放</text><text class="count">(0)</text>
+  </view>
+  <!-- 4 -->
+  <view class="iconbox">
+    <image src="/icon/sst.png"></image>
+  </view>
+  <view class="mytext" style="border:none">
+    <text>我的喜爱</text><text class="count">(0)</text>
+  </view>
+  </view>
+  <!-- 用户歌单-->
+  <view class="usersong">
+    <view class="collectbox" bindtap="showlist">
+      <view class="wz">收藏歌单</view>
+      <view class="arrowbox">
+      <image class="arrow" src="{{isshow?'/icon/arrow_down.png':'/icon/arrow_left.png'}}"></image>
+      </view>
+    </view>
+    <!-- 歌单 -->
+    <view wx:if="{{isshow}}" class="mylist">
+    ~主人很懒~空空如也~
+    </view>
+  </view>
+  <!-- copyright -->
+  <view class="copyright">
+      <text>Copyright ©YuanMusic-team-2019</text>
+    </view>

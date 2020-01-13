@@ -1,0 +1,69 @@
+<!--pages/community/community.wxml-->
+<view class="mycontainer">
+  <view class="wall">
+  <image src="http://p1.music.126.net/p5o7q0kPKL4X_xcLgXcLZw==/109951164513846240.jpg?imageView&quality=89"></image>
+  </view>
+
+<!--推荐歌单模块-->
+<view class="title">推荐歌单</view>
+<!-- 瀑布流 -->
+  <view class="wrapper">
+    <view class="item" wx:for="{{recommendlist}}" bindtap="go" data-id="0" data-index="{{index}}">
+      <!-- 歌单封面 -->
+      <view class="item-content-img">
+      <image src="{{item.picUrl}}"></image>
+      <view class="item-content-count">
+      <image class="leftpic" src="/icon/Headphones.png"></image>
+      <text style="margin-left:3px;">播放</text>
+      </view>               
+      </view>
+      <!-- 歌单简介 -->
+      <view class="item-content-text">
+       <view class="tip">{{item.text}}</view>
+       <view class="author">{{item.author?'by':'-'}} {{item.author}}</view>
+      </view>
+    </view>
+  </view>
+<!--夜晚歌单 模块 -->
+<view class="title">夜晚</view>
+  <view class="wrapper">
+    <view class="item" wx:for="{{nightlist}}" data-id="1" data-index="{{index}}" >
+      <!-- 歌单封面 -->
+      <view class="item-content-img">
+      <image src="{{item.picUrl}}"></image>
+      <view class="item-content-count">
+      <image class="leftpic" src="/icon/Headphones.png"></image>
+      <text style="margin-left:3px;">播放</text>
+      </view>               
+      </view>
+      <!-- 歌单简介 -->
+      <view class="item-content-text">
+        <view class="tip">{{item.text}}</view>
+       <view class="author">{{item.author?'by':''}} {{item.author}}</view>
+      </view>
+    </view>
+  </view>
+<!--下午茶歌单 模块 -->
+<view class="title">下午茶</view>
+  <view class="wrapper">
+    <view class="item" wx:for="{{afternoonlist}}" data-id="2" data-index="{{index}}">
+      <!-- 歌单封面 -->
+      <view class="item-content-img">
+      <image src="{{item.picUrl}}"></image>
+      <view class="item-content-count">
+      <image src="/icon/Headphones.png"></image>
+      <text style="margin-left:3px;">播放</text>
+      </view>               
+      </view>
+      <!-- 歌单简介 -->
+      <view class="item-content-text">
+        <view class="tip">{{item.text}}</view>
+       <view class="author">{{item.author?'by':'-'}} {{item.author}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 分类按钮 -->
+  <view class="feilei">
+  <button>更多分类</button>
+  </view>
+</view>

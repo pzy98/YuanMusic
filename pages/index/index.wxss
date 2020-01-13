@@ -1,0 +1,108 @@
+/**index.wxss**/
+
+.container{
+  padding: 0;
+}
+.lunbo{
+  width: 100%;
+  height: 160px;
+}
+/* 按钮栏 */
+.box{
+  width: 100%;
+  height:70px;
+  background:#ffff;
+  padding: 2px;
+  box-sizing: border-box;
+}
+.btnbox{
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  padding: 1%;
+}
+.btn{
+  width: 16%;
+  height: auto;
+  float: left;
+  text-align: center;
+}
+.right_margin{
+  margin-right:5%;
+}
+/* 圆按钮 */
+.yuan{
+  margin: 0 auto;
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  background:rgb(240, 147, 130);
+}
+.yuan image{
+  margin-top: 6px;
+}
+.btn text{
+  font-size:11px;
+}
+.musicbox{
+  width: 100%;
+  height:auto;
+  background: #bcbcc7;
+}
+/*推荐歌曲--标题*/
+.tittle{
+  width: 100%;
+  height: 25px;
+  background:#ffffff;
+  padding:6px 6px;
+  border-top:1px solid 	#bcbcc7;
+}
+.tittle h5{
+				color: #000000;
+				margin: 0;
+				padding-left: 8rpx;
+				margin-left: 6rpx;
+				float: left;
+				border-left: 6rpx solid #C9302C;
+	    }
+.tittle span{
+        padding: 2px 5px;
+				margin-right: 10px;
+				float: right;
+				font-size: 12px;
+				border:0.5px solid rgba(161, 159, 159, 0.452);
+				border-radius: 30px;
+}
+/* 歌单盒子设置 */
+.mylist{
+  height:auto;
+  background:#ffffff;
+  padding: 6px;
+}
+.mylist_topmargin{
+  margin-bottom: 1px;
+}
+/* 歌曲信息 */
+.left_img{
+  float: left;
+}
+.song_info{
+  width:70%;
+  height: 60px;
+  padding: 6px 6px;
+  margin-left: 25%;
+  background: #ffffff;
+}
+/* 歌名歌手字体 */
+/* .song_name{
+  font-size: 15px;
+} */
+.singer{
+  font-size: 13px;
+  color: rgba(128, 128, 128, 0.863);
+}
+/* 播放图标 */
+.right_icon{
+  float: right;
+  margin-top: 10px;
+}

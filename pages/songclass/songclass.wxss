@@ -1,0 +1,46 @@
+.bg{
+  background-color: white;
+  position: absolute;
+  height: auto;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+.bt{
+  width: 100%;
+  height: 100px;
+}
+.bt>image{
+  width: 100%;
+  height: 100px;
+}
+.bg2{
+  overflow:auto;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin-top: 3px;
+  border-radius: 2px;
+  margin-bottom: 50px;
+}
+.bt2{
+  font-weight: bold;
+  font-size: 16px;
+  width: 100%;
+  height: 25px;
+  padding-left: 10px;
+}
+.cy{
+  float: left;
+  height: 30px;
+  width: 20%;
+  background-color: rgb(165, 165, 165,0.15);
+  border-radius: 15px;
+  text-align:center;
+  line-height:30px;
+  margin: 12px 0px 0px 14px;
+  font-size: 13px;
+  font-family: Microsoft Yahei;
+}

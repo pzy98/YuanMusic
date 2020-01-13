@@ -1,0 +1,46 @@
+<!--pages/play.wxml-->
+<!-- 隐藏 -->
+<audio style="display:none" poster="{{music.picUrl}}" name="{{music.name}}" author="{{music.artists}}" loop="{{module=='single'?true:false}}" bindended="playend" src="{{music.mp3Url}}" bindtimeupdate="timeupdate" id="myAudio" controls></audio>
+  <!-- 背景 -->
+  <view class="bgbox">
+  <image class="bg-img" src="{{music.picUrl}}"></image>
+  <view class="mohu"></view>
+  <!-- 顶部bar -->
+  <view class="song-info-bar">
+  <!-- 歌名 -->
+  <view class="songname">{{music.name}}</view>
+  <view class="singer">{{music.albumname +'-'+music.artists}}</view>
+  </view>
+  <!-- 碟片 -->
+  <view class="diepian play {{stuta?'':'pause'}}">
+  <view class="rotate-img">
+  <image src="{{music.picUrl}}" style="width:350rpx;heigth:350rpx;"></image>
+  </view>
+  </view>
+  <!-- 底部控制台 -->
+  <view class="control">
+  <!-- 第一层：时间+进度条 -->
+  <view class="c1">
+    <view class="left-time">{{actiontime}}</view>
+    <view class="progress-bar">
+    <progress percent="{{range_val}}" color="#5BC5E6" stroke-width="3"/>
+    </view>
+    <view class="right-time">{{totaltime}}</view>
+  </view><!--c1-->
+  <!-- 第二层：控制按钮组 -->
+  <view class="c2">
+    <view class="bf-way">
+    <image bindtap="onloop" data-module="{{module}}" src="/icon/{{module}}.png" style="width:30px; height:30px"></image>
+    </view>
+    <view class="btn-group">
+    <image src="/icon/prev.png" bindtap="onUp" style="float:left;width:40px;height:40px;margin-left: 6%;"></image>
+    <image bindtap="onplay" src="/icon/{{stuta?'pause':'play'}}.png" style="width:45px;height:45px"></image>
+    <image src="/icon/next.png" bindtap="onNext" style="float:right;width:40px;height:40px;margin-right: 6%;"></image>
+    </view>
+    <view class="share-btn">
+    <image src="/icon/share.png" style="width:30px; height:30px"></image>
+    </view>
+  </view>
+  </view><!--control-->
+</view>
+

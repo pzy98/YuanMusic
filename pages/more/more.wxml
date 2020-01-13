@@ -1,0 +1,7 @@
+<!--pages/test/test.wxml-->
+<!-- 标题 -->
+<view class="title">音乐广场</view>
+<!-- 语言 -->
+<view class="lang">
+
+</view>

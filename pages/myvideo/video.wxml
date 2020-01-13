@@ -1,0 +1,47 @@
+<!-- 设置背景以及背景阴影-->
+<audio style="display:none" poster="{{music.picUrl}}" name="{{music.name}}" loop="{{module=='single'?true:false}}" bindtimeupdate="timeupdate" bindended="playend" author="{{music.artists}}" src="{{music.mp3Url}}" id="myAudio" controls></audio>
+<view class="bg">
+<image src="{{music.picUrl}}"></image>
+<view class="shadows"></view>
+</view>
+
+<!-- 音乐播放页面整体 -->
+<view class="bf">
+
+<!-- 设置音乐播放页面的标题 -->
+<view class="title">
+<view class="title1">{{music.name}}</view>
+<view class="title2">{{music.albumname +'-'+ music.artists}}</view>
+</view>
+
+<!-- 封面 -->
+<view class="center">
+<view class="pc">
+<image src="{{music.picUrl}}"></image>
+</view>
+</view>
+
+<!-- 控制器 -->
+<view class="botton">
+
+<!-- 进度条 -->
+<view class="play">
+<text class="tx">{{musicl}}</text>
+<progress percent="{{perl}}" color="red" stroke-width="4"></progress>
+<text class="tx">{{dang}}</text>
+</view>
+
+
+<!-- 控制按钮 -->
+<view class="controller">
+ <image class="img1" src="../../icon/download.png"></image>
+<image bindtap="onUp" class="img2" src="../../icon/unlike.png"></image>
+
+<image bindtap="onplay" class="img3" src="../../icon/{{stuta?'pause':'play'}}.png" ></image>
+
+<image bindtap="onNext" class="img4" src="../../icon/next.png"></image>
+
+<image class="img1" bindtap="onShareAppMessage" src="../../icon/share.png"></image>
+</view>
+</view>
+</view>
